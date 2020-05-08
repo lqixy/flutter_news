@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_news/pages/welcome/home.dart';
 import 'package:flutter_news/pages/welcome/welcome.dart';
 import 'package:flutter_news/routes.dart';
 

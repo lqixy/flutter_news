@@ -45,7 +45,7 @@ class _WelcomePageState extends State<WelcomePage> {
   }
 
   /// 特性说明
-  Widget _buildFeatureItem(String imageUrl, String intro,
+  Widget _buildFeatureItem(String imageName, String intro,
       {double marginTop = 40}) {
     return Container(
       width: duSetWidth(295),
@@ -56,8 +56,8 @@ class _WelcomePageState extends State<WelcomePage> {
           Container(
             width: duSetWidth(80),
             height: duSetWidth(80),
-            child: Image.network(
-              imageUrl,
+            child: Image.asset(
+              'assets/images/$imageName.png',
               fit: BoxFit.fill,
             ),
           ),
@@ -109,14 +109,14 @@ class _WelcomePageState extends State<WelcomePage> {
             this._buildPageHeadTitle(),
             this._buildPageHeadDetail(),
             this._buildFeatureItem(
-                'https://www.itying.com/images/flutter/1.png',
+                '1',
                 'Compelling photography and typography provide a beautiful reading',
                 marginTop: 86),
             this._buildFeatureItem(
-                'https://www.itying.com/images/flutter/2.png',
+                '2',
                 'Sector news never shares your personal data with advertisers or publishers'),
             this._buildFeatureItem(
-                'https://www.itying.com/images/flutter/3.png',
+                '5',
                 'You can get Preminm to unlock hundreds of publications'),
             Spacer(),
             this._buildStartButton()
